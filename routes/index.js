@@ -8,4 +8,15 @@ router.get('/', function(req, res, next) {
     });
 });
 
+router.post('/', function(req, res, next){
+    queries.addMentor({
+        name: req.body["person-name"],
+        email: req.body["person-email"],
+        bio: req.body["person-bio"],
+        specialties: req.body["person-specialties"]
+    }).then(function(){
+        res.redirect('/');
+    });
+});
+
 module.exports = router;

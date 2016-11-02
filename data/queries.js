@@ -5,6 +5,11 @@ function getMentors(){
     return knex("mentor").select();
 }
 
+function addMentor(mentor){
+    return knex("mentor").insert(mentor);
+};
+
 module.exports = {
-    getMentors
+    getMentors,
+    addMentor
 }

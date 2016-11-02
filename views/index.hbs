@@ -20,3 +20,16 @@
         {{/each}}
     </tbody>
 </table>
+
+<form method="POST" action="/">
+    <h2>Join our program!</h2>
+    <label for="person-name">Name</label>
+    <input name="person-name" id="person-name" />
+    <label for="person-email">Email</label>
+    <input name="person-email" id="person-email" />
+    <label for="person-bio">Bio</label>
+    <textarea name="person-bio" id="person-bio"></textarea>
+    <label for="person-specialties">Specialties (comma-separated, eg. "JavaScript, Ruby, Python...")</label>
+    <input name="person-specialties" id="person-specialties" />
+    <input type="submit" value="Sign Up" />
+</form>
