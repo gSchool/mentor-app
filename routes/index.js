@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
+var queries = require('../data/queries');
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+    var mentors = queries.getMentors();
+    res.render('index', {mentors});
 });
 
 module.exports = router;
