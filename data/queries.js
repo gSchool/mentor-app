@@ -1,17 +1,8 @@
-var mentors = [{
-    name: "Kyle Coberly",
-    email: "kyle.coberly@galvanize.com",
-    bio: "The boy who lived",
-    specialties: "JavaScript, Ember, Agile"
-},{
-    name: "Elyse Coberly",
-    email: "elyse.coberly@galvanize.com",
-    bio: "The girl who ran a 4 minute mile",
-    specialties: "Ruby, Spreadsheets, Data Science"
-}]
+var databaseConfiguration = require("../knexfile");
+var knex = require("knex")(databaseConfiguration[process.env.NODE_ENV || "development"]);
 
 function getMentors(){
-    return mentors;
+    return knex("mentor").select();
 }
 
 module.exports = {
