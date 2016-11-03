@@ -5,7 +5,7 @@ This is a suggested plan for how to run this workshop. Ideas and additions are w
 On Windows, node installs fine, but global express install often fails.
 Since we mainly need express installed globally only for the generator,
 you can achieve this by doing
-npm install -g express-generator 
+npm install -g express-generator
 
 ### Agenda
 
@@ -23,6 +23,9 @@ Take some time to commit to yourself and the students that the information deliv
 * Note taking protocols:   Outline the expectation that they will have some note taking procedure to note the difference (for example a star by big topics.)
 
 *  5 minute break
+
+* Introduce Lesson objectives
+
 
 * Introduction to Node.js.  Describe what it is, talk briefly about web application servers, javascript, the advantages of Node, etc.
 
