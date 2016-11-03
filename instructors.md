@@ -1,6 +1,12 @@
 ## Instructional cadence
 This is a suggested plan for how to run this workshop. Ideas and additions are welcome.
 
+## Notes:
+On Windows, node installs fine, but global express install often fails.
+Since we mainly need express installed globally only for the generator,
+you can achieve this by doing
+npm install -g express-generator 
+
 ### Agenda
 
 * Introduce Galvanize
