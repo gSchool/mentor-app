@@ -19,3 +19,16 @@ An app for signing up mentors!
 1. As an administrator, I can update the list of mentors dynamically
 1. As an adminstrator, I can persist changes to the mentor list after a crash
 1. As a user, I can add mentors
+
+
+## Instructions
+
+The repo you're looking at is a completed example of what this app should look like at the end of completing all of the stories. 
+
+The way this project is designed, students begin working on the stories in an Agile fashion, starting with the first story, which requires only that, as a user, we can see a list of all users by any means neccessary.  This means that admins can simply hard code users in and the users and then visible in the system. 
+
+The second stage is the same app, but showing all of the users hard coded by the admin. 
+
+The third stage pulls the users from a seeded database. 
+
+The fourth stage allows users to be entered into a form and then entered into a database. 
